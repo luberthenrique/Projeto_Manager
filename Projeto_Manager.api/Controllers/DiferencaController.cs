@@ -63,14 +63,14 @@ namespace Projeto_Manager.api.Controllers
                     var alteracaoLeft = diffs.Where(c => c.Operation == Operation.Delete).ToList();
                     var alteracaoRight = diffs.Where(c => c.Operation == Operation.Insert).ToList();
 
-                    var texto = "Valor Left e Right possuem alteracao do(s) carastere(s) ";
+                    var texto = "Valor Left e Right possuem alteração do(s) carastere(s) ";
 
                     for (int i = 0; i < alteracaoLeft.Count(); i++)
                     {
                         texto+= alteracaoLeft[i].Text + "/" + alteracaoRight[i].Text + (i < alteracaoLeft.Count() - 1 ? " - " : "");
                     }                    
 
-                    texto = texto + " nos respectivos caracteres de número ";
+                    texto = texto + " no(s) respectivo(s) caractere(s) de posição ";
                     var legth = 0;
 
                     for (int i = 0; i < lengthAlterado.Count(); i++)

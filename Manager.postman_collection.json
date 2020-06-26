@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "897ad335-f9d3-475e-9086-c15da22cb443",
+		"name": "Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Efetuar Comparação",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:44310/v1/diff"
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar Left",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"left\" : \"testando minha aplicaçaa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:44310/v1/diff/left "
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar Right",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"right\" : \"testando minna aplicacão\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:44310/v1/diff/right"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar ComparaÇoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:44310/v1/diff/comparacoes"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
